@@ -1,0 +1,277 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(Images/back2.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #f1c40f;
+}
+
+/* Hero Section */
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+
+.hero_image {
+    flex: 1;
+}
+
+.hero_image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.hero_content {
+    flex: 1;
+    padding: 2rem;
+}
+
+.hero_content h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero_content .hi_text {
+    color: #3498db;
+}
+
+.hero_content .name_text {
+    color: #e74c3c;
+}
+
+.hero_content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Projects Section */
+#project {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+#project h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card_content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card_content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Skills Section */
+#skills {
+    padding: 5rem 0;
+    background-color: #f4f4f4;
+}
+
+.black_box {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.black_box h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.black_box h2 span {
+    color: #e74c3c;
+}
+
+.work {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.work .grid_item {
+    display: flex;
+    justify-content: center;
+}
+
+.work .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.work .card .image_container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.work .card .image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.work .card_content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.work .card_content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.work .card_content p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.work .card:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact_list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact_item {
+    margin-bottom: 10px;
+}
+
+.contact_item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contact_item i {
+    margin-right: 5px;
+}
+
+.bottom_contact {
+    margin-top: 20px;
+}
+footer {
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+marquee {
+    font-size: 18px;
+    color: #a31111;
+    white-space: nowrap; /* Prevents wrapping of text */
+    overflow: hidden;
+}
